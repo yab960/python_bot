@@ -7,12 +7,13 @@ require __DIR__ . '/vendor/autoload.php';
 class RandomNumberServer implements MessageComponentInterface {
     protected $clients;
     protected $loop;
-    $this->bingoCards = $this->generateBingoCards(50);
 
     public function __construct($loop) {
         $this->clients = new \SplObjectStorage;
         $this->loop = $loop;
         echo "WebSocket server started.\n";
+                    $this->bingoCards = $this->generateBingoCards(50);
+
 
          $conn->send(json_encode($this->bingoCards));
     }
