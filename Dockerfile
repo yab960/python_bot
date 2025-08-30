@@ -15,4 +15,4 @@ RUN composer install --no-dev --optimize-autoloader
 
 EXPOSE 8080
 
-CMD ["php", "random_server.php"]
+CMD ["php", "game.php"]
