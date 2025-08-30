@@ -1,7 +1,7 @@
 import time
 
 def main():
-    while true:
+    while True:
         print("running...")
         time.sleep(1)
 
